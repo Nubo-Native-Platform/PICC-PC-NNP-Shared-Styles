@@ -1,7 +1,12 @@
 {
     "name": "nnp-shared-styles",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "theme-base.scss",
+    "style": "index.scss",
+    "files": [
+        "index.scss",
+        "styles/"
+    ],
     "devDependencies": {
         "sass": "^1.89.2"
     }
