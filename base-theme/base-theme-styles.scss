@@ -1,0 +1,19 @@
+@import './base-theme-variables.scss';
+
+.topHeader {
+
+    width: 100%;
+    height: var(--topHeader-height);
+    background-color: var(--topHeader-background-color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.justifyCentre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
