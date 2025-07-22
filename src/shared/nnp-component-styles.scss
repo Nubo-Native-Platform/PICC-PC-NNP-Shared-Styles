@@ -1,0 +1,55 @@
+@use '../shared//mixins.scss';
+
+
+.nnp-main-container {
+  padding-top: 3vw;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.nnp-main-content {
+  position: relative;
+  height: 100%;
+  @include mixins.flex-direction(column);
+}
+
+
+.nnp-top-header {
+
+  width: 100%;
+  height: var(--topHeader-height);
+  background-color: var(--topHeader-background-color);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  @include mixins.justify(center, center);
+}
+
+.nnp-bottom-footer {
+  background-color: black;
+  color: white;
+  height: var(--bottom);
+
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include mixins.justify(center, center);
+
+}
+
+.nnp-modal-container {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  @include mixins.justify(center, center);
+
+  .nnp-modal-content {
+    background-color: var(--base-background-color-primary);
+    border-radius: var(--radius-large);
+    box-shadow: var(--modal-box-shadow);
+    border: 1px solid var(--border-color);
+  }
+}
