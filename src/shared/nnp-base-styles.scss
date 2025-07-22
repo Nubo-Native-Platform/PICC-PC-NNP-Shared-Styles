@@ -1,4 +1,4 @@
-@use "./mixins.scss";
+@use './nnp-mixins.scss' as mixins;
 
 .flex-center-center {
     @include mixins.justify(center, center);

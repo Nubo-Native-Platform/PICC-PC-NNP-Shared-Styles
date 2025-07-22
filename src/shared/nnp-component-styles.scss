@@ -1,5 +1,10 @@
-@use '../shared//mixins.scss';
+@use './nnp-mixins.scss' as mixins;
 
+.nnp-layout-container {
+  @include mixins.flex-direction(column);
+  min-height: 100vh;
+  position: relative;
+}
 
 .nnp-main-container {
   padding-top: var(--top-header-height);
@@ -13,35 +18,24 @@
   @include mixins.flex-direction(column);
 }
 
-.nnp-layout-container {
-  padding-top: var(--top-header-height);
-  flex-grow: 1;
-  overflow-y: auto;
-
-}
-
 .nnp-top-header {
 
   width: 100%;
-  height: var(--topHeader-height);
-  background-color: var(--topHeader-background-color);
-
+  height: var(--top-header-height);
+  background-color: var(--top-header-background-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-
-  @include mixins.justify(center, center);
+  color: var(--text-secondary-color);
 }
 
 .nnp-bottom-footer {
-  background-color: black;
-  color: white;
-  height: var(--bottom);
-
-  flex-direction: column;
+  background-color: var(--bottom-footer-background-color);
+  color: var(--text-secondary-color);
+  height: var(--bottom-footer-height);
   gap: 1.5rem;
-
+  @include mixins.flex-direction(column);
   @include mixins.justify(center, center);
 
 }
