@@ -13,7 +13,7 @@
   @include mixins.flex-direction(column);
 }
 
-.nnp-main-container {
+.layout-container {
   padding-top: var(--top-header-height);
   flex-grow: 1;
   overflow-y: auto;
