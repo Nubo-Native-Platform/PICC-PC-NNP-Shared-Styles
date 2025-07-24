@@ -12,6 +12,10 @@
     @include mixins.justify(space-between, center);
 }
 
+.flex-start-center {
+    @include mixins.justify(start, center);
+}
+
 .flex-column {
     @include mixins.flex-direction(column);
 }
@@ -38,4 +42,12 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.page-padding-large {
+    padding: var(--custom-padding-large);
+}
+
+.page-padding-medium {
+    padding: var(--custom-padding-medium);
 }

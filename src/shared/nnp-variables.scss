@@ -1,12 +1,12 @@
 :root {
-    --font-family-header: "Segoe UI", Arial, sans-serif;
-    --font-family-body: "Century Gothic";
-    --font-family-special: "Helvetica";
+    --font-family-special: "Segoe UI", Arial, sans-serif;
+    --font-family-header: "Century Gothic";
+    --font-family-body: "Helvetica";
 
     --font-size-md: 1rem;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.85rem;
-    --font-size-lg: 1.25rem;
+    --font-size-lg: 1.125rem;
     --font-size-xl: 1.5rem;
     --font-size-xxl: 2rem;
 
@@ -16,13 +16,6 @@
     --font-bold: 600;
     --fold-bolder: 800;
 
-
-    --top-header-height: 3vw;
-    --top-header-background-color: black;
-
-    --bottom-footer-height: 14vw;
-    --bottom-footer-background-color: #333333;
-
     --radius-small: 0.15rem;
     --radius-medium: 0.25rem;
     --radius-large: 0.75rem;
@@ -31,26 +24,28 @@
     --modal-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
         0 8px 10px -6px rgba(0, 0, 0, 0.1);
 
-    --base-background-color-primary: white;
-    --base-background-color-secondary: black;
-    --base-background-highlight: #2196F3;
-    --tab-background-color-primary: #607d8b;
-    --tab-background-color-secondary: #f1f1f1;
-    --tab-background-color-highlight: #ccc;
+    --base-color-primary: white;
+    --base-color-secondary: black;
+    --base-color-tertiary: #333333;
 
-    --text-primary-color: black;
-    --text-secondary-color: white;
-    --text-highlight-color: #757575;
-    --text-link-color: #2196f3;
-    --text-disabled-color: #f44336;
+    --component-color-primary: #607d8b;
+    --component-color-secondary: #f1f1f1;
+    --component-color-tertiary: #ccc;
+    --component-color-hightlight: #2196F3;
 
+    --text-color-primary: black;
+    --text-color-secondary: white;
+    --text-color-highlight: #757575;
+    --text-color-link: #2196f3;
+    --text-color-disabled: #f44336;
 
     --custom-padding-small: 0.5rem;
     --custom-padding-medium: 1rem;
     --custom-padding-large: 2rem;
 
-    --custom-height: 3vw;
-    --custom-width: 3vw;
+    --component-height-small: 3vw;
+    --component-height-large: 14vw;
+
 }
 
 :root .dark-theme {
