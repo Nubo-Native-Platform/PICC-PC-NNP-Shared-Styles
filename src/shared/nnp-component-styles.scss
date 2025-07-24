@@ -1,0 +1,88 @@
+@use './nnp-mixins.scss' as mixins;
+@use './nnp-base-styles.scss';
+
+.nnp-layout-container {
+  @include mixins.flex-direction(column);
+  min-height: 100vh;
+  position: relative;
+}
+
+.nnp-main-container {
+  padding-top: var(--component-height-small);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.nnp-main-content {
+  position: relative;
+  height: 100%;
+  @include mixins.flex-direction(column);
+}
+
+.nnp-top-header {
+  width: 100%;
+  height: var(--component-height-small);
+  background-color: var(--base-color-secondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: var(--text-color-secondary);
+}
+
+.nnp-logo-panel {
+  @include mixins.justify(center, center);
+  background-color: var(--base-color-secondary);
+  height: calc(var(--component-height-large) - var(--component-height-small));
+
+  img {
+    width: 18vw;
+  }
+}
+
+.nnp-bottom-footer {
+  background-color: var(--base-color-tertiary);
+  color: var(--text-color-secondary);
+  height: var(--component-height-large);
+  gap: 1rem;
+  @include mixins.flex-direction(column);
+  @include mixins.justify(center, center);
+
+}
+
+.nnp-title {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-header);
+  padding-bottom: var(--custom-padding-medium);
+}
+
+.nnp-btn {
+  height: var(--component-height-small);
+  min-height: var(--component-height-small) !important;
+  padding: 0 var(--custom-padding-medium);
+  @extend .flex-space-center;
+}
+
+.nnp-tab-primary {
+  background-color: var(--component-color-primary);
+  color: var(--text-color-secondary);
+}
+
+.nnp-tab-secondary {
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-primary);
+}
+
+.nnp-modal-container {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  @include mixins.justify(center, center);
+
+  .nnp-modal-content {
+    background-color: var(--base-color-primary);
+    border-radius: var(--radius-large);
+    box-shadow: var(--modal-box-shadow);
+    border: 1px solid var(--border-color);
+  }
+}

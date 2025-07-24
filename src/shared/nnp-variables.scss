@@ -1,0 +1,60 @@
+:root {
+    --font-family-special: "Segoe UI", Arial, sans-serif;
+    --font-family-header: "Century Gothic";
+    --font-family-body: "Helvetica";
+
+    --font-size-md: 1rem;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.85rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+
+
+    --font-light: 200;
+    --font-normal: 400;
+    --font-bold: 600;
+    --fold-bolder: 800;
+
+    --radius-small: 0.15rem;
+    --radius-medium: 0.25rem;
+    --radius-large: 0.75rem;
+
+    --border-color: #e5e7eb;
+    --modal-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+    --base-color-primary: white;
+    --base-color-secondary: black;
+    --base-color-tertiary: #333333;
+
+    --component-color-primary: #607d8b;
+    --component-color-secondary: #f1f1f1;
+    --component-color-tertiary: #ccc;
+    --component-color-hightlight: #2196F3;
+
+    --text-color-primary: black;
+    --text-color-secondary: white;
+    --text-color-highlight: #757575;
+    --text-color-link: #2196f3;
+    --text-color-disabled: #f44336;
+
+    --custom-padding-small: 0.5rem;
+    --custom-padding-medium: 1rem;
+    --custom-padding-large: 2rem;
+
+    --component-height-small: 3vw;
+    --component-height-large: 14vw;
+
+}
+
+:root .dark-theme {
+    --top-header-background-color: #121212;
+    --bottom-footer-background-color: #1e1e1e;
+    --base-background-color-primary: #121212;
+    --base-background-color-secondary: #1e1e1e;
+    --text-primary-color: #ffffff;
+    --text-secondary-color: #ffffff;
+    --text-highlight-color: #b0bec5;
+    --text-link-color: #bb86fc;
+}

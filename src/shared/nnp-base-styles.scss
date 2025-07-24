@@ -1,0 +1,53 @@
+@use './nnp-mixins.scss' as mixins;
+
+.flex-center-center {
+    @include mixins.justify(center, center);
+}
+
+.flex-center-top {
+    @include mixins.justify(center, top);
+}
+
+.flex-space-center {
+    @include mixins.justify(space-between, center);
+}
+
+.flex-start-center {
+    @include mixins.justify(start, center);
+}
+
+.flex-column {
+    @include mixins.flex-direction(column);
+}
+
+.flex-row {
+    @include mixins.flex-direction(row);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.max-height {
+    height: 100vh;
+}
+
+.max-width {
+    width: 100vw;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.page-padding-large {
+    padding: var(--custom-padding-large);
+}
+
+.page-padding-medium {
+    padding: var(--custom-padding-medium);
+}
