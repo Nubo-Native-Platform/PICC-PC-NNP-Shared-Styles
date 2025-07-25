@@ -28,6 +28,7 @@
   left: 0;
   z-index: 100;
   color: var(--text-color-secondary);
+  @extend .flex-space-center;
 }
 
 .nnp-logo-panel {
@@ -56,21 +57,47 @@
   padding-bottom: var(--custom-padding-medium);
 }
 
-.nnp-btn {
-  height: var(--component-height-small);
-  min-height: var(--component-height-small) !important;
-  padding: 0 var(--custom-padding-medium);
-  @extend .flex-space-center;
+.nnp-header {
+  @include mixins.nnp-component-primary;
 }
 
-.nnp-tab-primary {
+.nnp-header-primary {
   background-color: var(--component-color-primary);
   color: var(--text-color-secondary);
 }
 
-.nnp-tab-secondary {
+.nnp-header-secondary {
   background-color: var(--component-color-secondary);
   color: var(--text-color-primary);
+}
+
+.nnp-btn {
+  @include mixins.nnp-component-primary;
+  @include mixins.justify(center, center);
+  border-radius: var(--radius-medium);
+  font-size: var(--font-size-sm);
+
+  &:hover {
+    background-color: (var(--component-color-tertiary));
+  }
+}
+
+.nnp-btn-primary {
+  background-color: var(--component-color-hightlight);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.nnp-btn-secondary {
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-primary);
+  cursor: pointer;
+}
+
+.nnp-btn-disabled {
+  background-color: var(--component-color-hightlight);
+  color: var(--text-color-secondary);
+  cursor: none;
 }
 
 .nnp-modal-container {
@@ -78,11 +105,20 @@
   inset: 0;
   backdrop-filter: blur(2px);
   @include mixins.justify(center, center);
+  @extend .max-height;
+  @extend .max-width;
 
   .nnp-modal-content {
     background-color: var(--base-color-primary);
-    border-radius: var(--radius-large);
+    // border-radius: var(--radius-large);
     box-shadow: var(--modal-box-shadow);
-    border: 1px solid var(--border-color);
+    // border: 1px solid var(--border-color);
+    @include mixins.flex-direction(column);
+
+    .nnp-modal-body {
+      padding: var(--custom-padding-medium);
+      flex-grow: 1;
+      overflow: auto;
+    }
   }
 }
