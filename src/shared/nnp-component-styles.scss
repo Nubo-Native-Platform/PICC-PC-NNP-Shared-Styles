@@ -52,12 +52,12 @@
 }
 
 .nnp-title {
-  font-size: var(--font-size-lg);
-  font-family: var(--font-family-header);
-  padding-bottom: var(--custom-padding-medium);
+  @extend .header-font;
+  padding-bottom: var(--nnp-padding-medium);
 }
 
 .nnp-header {
+  @extend .header-font;
   @include mixins.nnp-component-primary;
 }
 
@@ -74,8 +74,10 @@
 .nnp-btn {
   @include mixins.nnp-component-primary;
   @include mixins.justify(center, center);
+  @extend .cursor-pointer;
+  @extend .header-font;
   border-radius: var(--radius-medium);
-  font-size: var(--font-size-sm);
+
 
   &:hover {
     background-color: (var(--component-color-tertiary));
@@ -85,19 +87,17 @@
 .nnp-btn-primary {
   background-color: var(--component-color-hightlight);
   color: var(--text-color-secondary);
-  cursor: pointer;
 }
 
 .nnp-btn-secondary {
   background-color: var(--component-color-secondary);
   color: var(--text-color-primary);
-  cursor: pointer;
 }
 
 .nnp-btn-disabled {
   background-color: var(--component-color-hightlight);
   color: var(--text-color-secondary);
-  cursor: none;
+  cursor: none !important;
 }
 
 .nnp-modal-container {
@@ -116,7 +116,7 @@
     @include mixins.flex-direction(column);
 
     .nnp-modal-body {
-      padding: var(--custom-padding-medium);
+      padding: var(--nnp-padding-medium);
       flex-grow: 1;
       overflow: auto;
     }

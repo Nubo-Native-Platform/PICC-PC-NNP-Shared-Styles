@@ -6,8 +6,8 @@
     --font-size-md: 1rem;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.85rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.5rem;
+    --font-size-lg: 1.115rem;
+    --font-size-xl: 1.25rem;
     --font-size-xxl: 2rem;
 
 
@@ -39,13 +39,16 @@
     --text-color-link: #2196f3;
     --text-color-disabled: #f44336;
 
-    --custom-padding-small: 0.5rem;
-    --custom-padding-medium: 1rem;
-    --custom-padding-large: 2rem;
+    --nnp-padding-small: 0.5rem;
+    --nnp-padding-medium: 1rem;
+    --nnp-padding-large: 2rem;
 
     --component-height-small: 3vw;
     --component-height-medium: 4vw;
     --component-height-large: 14vw;
+
+    --nnp-date-formate: "DD/MM/YYYY";
+    --nnp-time-formate: "HH:mm:ss";
 
 }
 

@@ -12,5 +12,5 @@
 @mixin nnp-component-primary {
   height: var(--component-height-medium);
   min-height: var(--component-height-medium) !important;
-  padding: 0 var(--custom-padding-medium);
+  padding: 0 var(--nnp-padding-medium);
 }
