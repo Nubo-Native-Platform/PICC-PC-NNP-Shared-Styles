@@ -29,6 +29,25 @@
   z-index: 100;
   color: var(--text-color-secondary);
   @extend .flex-space-center;
+
+  .nnp-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: var(--nnp-padding-medium);
+    padding-right: var(--nnp-padding-medium);
+    height: 100%;
+    color: var(--text-color-secondary-color);
+    cursor: pointer;
+  }
+
+  .nnp-menu-item:hover {
+    background-color: var(--component-color-tertiary);
+  }
+
+  .nnp-menu-item.active {
+    background-color: var(--component-color-hightlight);
+  }
 }
 
 .nnp-logo-panel {
