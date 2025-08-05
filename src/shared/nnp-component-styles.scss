@@ -8,7 +8,7 @@
 }
 
 .nnp-main-container {
-  padding-top: var(--component-height-small);
+  padding-top: var(--component-height-medium);
   flex-grow: 1;
   overflow-y: auto;
 }
@@ -21,7 +21,7 @@
 
 .nnp-top-header {
   width: 100%;
-  height: var(--component-height-small);
+  height: var(--component-height-medium);
   background-color: var(--base-color-secondary);
   position: fixed;
   top: 0;
@@ -29,6 +29,7 @@
   z-index: 100;
   color: var(--text-color-secondary);
   @extend .flex-space-center;
+  @extend .special-font;
 
   .nnp-menu-item {
     display: flex;
@@ -43,17 +44,19 @@
 
   .nnp-menu-item:hover {
     background-color: var(--component-color-tertiary);
+    color: var(--text-color-primary);
   }
 
   .nnp-menu-item.active {
     background-color: var(--component-color-hightlight);
+    color: var(--text-color-secondary);
   }
 }
 
 .nnp-logo-panel {
   @include mixins.justify(center, center);
   background-color: var(--base-color-secondary);
-  height: calc(var(--component-height-large) - var(--component-height-small));
+  height: calc(var(--component-height-large) - var(--component-height-medium));
 
   img {
     width: 18vw;
@@ -91,26 +94,39 @@
 }
 
 .nnp-btn {
-  @include mixins.nnp-component-primary;
+  @include mixins.nnp-component-secondary;
   @include mixins.justify(center, center);
   @extend .cursor-pointer;
   @extend .header-font;
   border-radius: var(--radius-medium);
-
-
-  &:hover {
-    background-color: (var(--component-color-tertiary));
-  }
 }
 
 .nnp-btn-primary {
   background-color: var(--component-color-hightlight);
   color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+  }
 }
 
 .nnp-btn-secondary {
   background-color: var(--component-color-secondary);
   color: var(--text-color-primary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+  }
+}
+
+.nnp-btn-tertiary {
+  background-color: var(--base-color-secondary);
+  color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+    color: var(--text-color-primary);
+  }
 }
 
 .nnp-btn-disabled {
@@ -129,9 +145,7 @@
 
   .nnp-modal-content {
     background-color: var(--base-color-primary);
-    // border-radius: var(--radius-large);
     box-shadow: var(--modal-box-shadow);
-    // border: 1px solid var(--border-color);
     @include mixins.flex-direction(column);
 
     .nnp-modal-body {
