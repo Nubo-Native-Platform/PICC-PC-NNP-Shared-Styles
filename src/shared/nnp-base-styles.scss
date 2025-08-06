@@ -45,9 +45,57 @@
 }
 
 .page-padding-large {
-    padding: var(--custom-padding-large);
+    padding: var(--nnp-padding-large);
 }
 
 .page-padding-medium {
-    padding: var(--custom-padding-medium);
+    padding: var(--nnp-padding-medium);
+}
+
+.header-font {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-md);
+}
+
+.body-font {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-sm);
+}
+
+.special-font {
+    font-family: var(--font-family-special);
+    font-size: var(--font-size-sm);
+}
+
+.nnp-border {
+    border: 1px solid var(--border-color);
+}
+
+.nnp-border-bottom {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.font-md {
+    font-size: var(--font-size-md);
+}
+
+.font-xs {
+    font-size: var(--font-size-xs);
+}
+
+.font-sm {
+    font-size: var(--font-size-sm);
+}
+
+.font-lg {
+    font-size: var(--font-size-lg);
+}
+
+.font-xl {
+    font-size: var(--font-size-xl);
+}
+
+.font-xxl {
+    font-size: var(--font-size-xxl);
 }

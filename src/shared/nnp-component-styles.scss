@@ -8,7 +8,7 @@
 }
 
 .nnp-main-container {
-  padding-top: var(--component-height-small);
+  padding-top: var(--component-height-medium);
   flex-grow: 1;
   overflow-y: auto;
 }
@@ -21,19 +21,42 @@
 
 .nnp-top-header {
   width: 100%;
-  height: var(--component-height-small);
+  height: var(--component-height-medium);
   background-color: var(--base-color-secondary);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   color: var(--text-color-secondary);
+  @extend .flex-space-center;
+  @extend .special-font;
+
+  .nnp-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: var(--nnp-padding-medium);
+    padding-right: var(--nnp-padding-medium);
+    height: 100%;
+    color: var(--text-color-secondary-color);
+    cursor: pointer;
+  }
+
+  .nnp-menu-item:hover {
+    background-color: var(--component-color-tertiary);
+    color: var(--text-color-primary);
+  }
+
+  .nnp-menu-item.active {
+    background-color: var(--component-color-hightlight);
+    color: var(--text-color-secondary);
+  }
 }
 
 .nnp-logo-panel {
   @include mixins.justify(center, center);
   background-color: var(--base-color-secondary);
-  height: calc(var(--component-height-large) - var(--component-height-small));
+  height: calc(var(--component-height-large) - var(--component-height-medium));
 
   img {
     width: 18vw;
@@ -51,26 +74,65 @@
 }
 
 .nnp-title {
-  font-size: var(--font-size-lg);
-  font-family: var(--font-family-header);
-  padding-bottom: var(--custom-padding-medium);
+  @extend .header-font;
+  padding-bottom: var(--nnp-padding-medium);
 }
 
-.nnp-btn {
-  height: var(--component-height-small);
-  min-height: var(--component-height-small) !important;
-  padding: 0 var(--custom-padding-medium);
-  @extend .flex-space-center;
+.nnp-header {
+  @extend .header-font;
+  @include mixins.nnp-component-primary;
 }
 
-.nnp-tab-primary {
+.nnp-header-primary {
   background-color: var(--component-color-primary);
   color: var(--text-color-secondary);
 }
 
-.nnp-tab-secondary {
+.nnp-header-secondary {
   background-color: var(--component-color-secondary);
   color: var(--text-color-primary);
+}
+
+.nnp-btn {
+  @include mixins.nnp-component-secondary;
+  @include mixins.justify(center, center);
+  @extend .cursor-pointer;
+  @extend .header-font;
+  border-radius: var(--radius-medium);
+}
+
+.nnp-btn-primary {
+  background-color: var(--component-color-hightlight);
+  color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+  }
+}
+
+.nnp-btn-secondary {
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-primary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+  }
+}
+
+.nnp-btn-tertiary {
+  background-color: var(--base-color-secondary);
+  color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+    color: var(--text-color-primary);
+  }
+}
+
+.nnp-btn-disabled {
+  background-color: var(--component-color-hightlight);
+  color: var(--text-color-secondary);
+  cursor: none !important;
 }
 
 .nnp-modal-container {
@@ -78,11 +140,18 @@
   inset: 0;
   backdrop-filter: blur(2px);
   @include mixins.justify(center, center);
+  @extend .max-height;
+  @extend .max-width;
 
   .nnp-modal-content {
     background-color: var(--base-color-primary);
-    border-radius: var(--radius-large);
     box-shadow: var(--modal-box-shadow);
-    border: 1px solid var(--border-color);
+    @include mixins.flex-direction(column);
+
+    .nnp-modal-body {
+      padding: var(--nnp-padding-medium);
+      flex-grow: 1;
+      overflow: auto;
+    }
   }
 }
