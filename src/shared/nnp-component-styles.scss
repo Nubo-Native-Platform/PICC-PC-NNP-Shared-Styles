@@ -58,10 +58,10 @@
 .nnp-logo-panel {
   @include mixins.justify(center, center);
   background-color: var(--base-color-secondary);
-  height: calc(var(--component-height-large) - var(--component-height-medium));
+  height: var(--component-height-large);
 
   img {
-    width: 18vw;
+    height: 90%;
   }
 }
 
