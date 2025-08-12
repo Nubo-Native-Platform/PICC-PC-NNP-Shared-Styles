@@ -143,6 +143,7 @@
   position: absolute;
   inset: 0;
   backdrop-filter: blur(2px);
+  z-index: 100;
   @include mixins.justify(center, center);
   @extend .max-height;
   @extend .max-width;

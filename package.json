@@ -1,6 +1,6 @@
 {
     "name": "nnp-shared-styles",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "main": "theme-base.scss",
     "style": "index.scss",
     "files": [
