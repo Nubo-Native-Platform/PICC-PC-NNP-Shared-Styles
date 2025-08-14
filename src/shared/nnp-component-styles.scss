@@ -27,27 +27,25 @@
   color: var(--text-color-secondary);
   @extend .flex-space-center;
   @extend .special-font;
+}
 
-  .nnp-menu-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: var(--nnp-padding-medium);
-    padding-right: var(--nnp-padding-medium);
-    height: 100%;
-    color: var(--text-color-secondary-color);
-    cursor: pointer;
-  }
+.nnp-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--nnp-padding-medium);
+  height: 100%;
+  cursor: pointer;
+}
 
-  .nnp-menu-item:hover {
-    background-color: var(--component-color-tertiary);
-    color: var(--text-color-primary);
-  }
+.nnp-menu-item:hover {
+  background-color: var(--component-color-tertiary);
+  color: var(--text-color-primary);
+}
 
-  .nnp-menu-item.active {
-    background-color: var(--component-color-hightlight);
-    color: var(--text-color-secondary);
-  }
+.nnp-menu-item.active {
+  background-color: var(--component-color-hightlight);
+  color: var(--text-color-secondary);
 }
 
 .nnp-body-content {
@@ -160,4 +158,54 @@
       overflow: auto;
     }
   }
+}
+
+
+
+.nnp-side-layout-container {
+  @include mixins.flex-direction(row);
+  min-height: 100vh;
+  position: relative;
+}
+
+.nnp-side-main-container {
+  flex-grow: 1;
+}
+
+.nnp-side-nav {
+  @include mixins.flex-direction(column);
+  @extend .special-font;
+  width: var(--nav-width);
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-primary);
+  border-right: 1px solid var(--border-color);
+  transition: width 0.3s ease;
+
+  .nnp-side-menu-item {
+    @include mixins.flex-direction(column);
+  }
+
+  .nnp-side-menu-header {
+    @include mixins.justify(space-between, center);
+    height: var(--component-height-medium);
+    cursor: pointer;
+    padding: 0 var(--nnp-padding-small);
+
+    &:hover {
+      background-color: var(--component-color-tertiary);
+    }
+
+    .nnp-side-menu-arrow {
+      font-size: var(--font-size-md);
+    }
+  }
+
+  .nnp-side-menu-selected {
+    background-color: var(--component-color-primary);
+    color: var(--text-color-secondary);
+  }
+}
+
+.nnp-side-nav.collapsed {
+  width: 0;
 }
