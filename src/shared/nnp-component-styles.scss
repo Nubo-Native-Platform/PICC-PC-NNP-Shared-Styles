@@ -93,6 +93,11 @@
   color: var(--text-color-primary);
 }
 
+.nnp-header-highlight {
+  background-color: var(--component-color-highlight);
+  color: var(--text-color-secondary);
+}
+
 .nnp-btn {
   @include mixins.nnp-component-secondary;
   @include mixins.justify(center, center);
@@ -169,7 +174,9 @@
 }
 
 .nnp-side-main-container {
-  flex-grow: 1;
+  width: calc(100vw - var(--nav-width));
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .nnp-side-nav {
