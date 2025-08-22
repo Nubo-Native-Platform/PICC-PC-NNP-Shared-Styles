@@ -111,4 +111,8 @@
 .textLink {
     color: var(--text-color-link);
     cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
