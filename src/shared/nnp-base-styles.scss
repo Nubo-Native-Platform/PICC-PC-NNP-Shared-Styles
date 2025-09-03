@@ -58,6 +58,18 @@
     padding: var(--nnp-padding-medium);
 }
 
+.page-margin-medium {
+    margin: var(--nnp-padding-medium);
+}
+
+.medium-margin-bottom {
+    margin-bottom: var(--nnp-padding-medium);
+}
+
+.large-margin-bottom {
+    margin-bottom: var(--nnp-padding-large);
+}
+
 .header-font {
     font-family: var(--font-family-header);
     font-size: var(--font-size-md);
@@ -72,8 +84,6 @@
     font-family: var(--font-family-special);
     font-size: var(--font-size-sm);
 }
-
-.menu-font {}
 
 .nnp-border {
     border: 1px solid var(--border-color);
@@ -115,4 +125,61 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+.font-md {
+    font-size: var(--font-size-md);
+}
+
+.font-nm {
+    font-size: var(--font-size-nm);
+}
+
+.font-xs {
+    font-size: var(--font-size-xs);
+}
+
+
+.font-sm {
+    font-size: var(--font-size-sm);
+}
+
+.font-lg {
+    font-size: var(--font-size-lg);
+}
+
+.font-xl {
+    font-size: var(--font-size-xl);
+}
+
+.font-xxl {
+    font-size: var(--font-size-xxl);
+}
+
+.font-thin {
+    font-weight: var(--font-light);
+}
+
+.font-normal {
+    font-weight: var(--font-normal);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+.font-bolder {
+    font-weight: var(--font-bolder);
+}
+
+.special-font-family {
+    font-family: var(--font-family-special);
+}
+
+.header-font-family {
+    font-family: var(--font-family-header);
+}
+
+.body-font-family {
+    font-family: var(--font-family-body);
 }
