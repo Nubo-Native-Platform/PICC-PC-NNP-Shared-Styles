@@ -5,6 +5,7 @@
   @include mixins.flex-direction(column);
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .nnp-main-container {
@@ -173,6 +174,7 @@
 .nnp-side-layout-container {
   // @include mixins.flex-direction(row);
   height: calc(100vh - var(--component-height-medium));
+  overflow: hidden;
 }
 
 .nnp-side-main-container {
@@ -185,7 +187,8 @@
 
 .nnp-side-main-content {
   width: calc(100vw - var(--nav-width));
-  height: 100%;
+  height: calc(100% - var(--nnp-padding-large));
+  padding: var(--nnp-padding-medium) var(--nnp-padding-large);
   overflow-y: auto;
 }
 
@@ -218,11 +221,19 @@
     .nnp-side-menu-arrow {
       font-size: var(--font-size-md);
     }
+
+    .nnp-side-menu-children {
+      font-size: var(--font-size-xs);
+    }
   }
 
   .nnp-side-menu-header.selected {
     background-color: var(--component-color-primary) !important;
     color: var(--text-color-secondary) !important;
+  }
+
+  .nnp-side-menu-header.active {
+    background-color: var(--component-color-tertiary);
   }
 }
 
@@ -237,7 +248,7 @@
 }
 
 .nnp-side-menu-children.open {
-  max-height: 110vh;
+  max-height: 300vh;
   transition: max-height 1s ease-in;
   // box-shadow: inset 0 4px 6px -4px #616161, inset 0 -4px 6px -4px #616161;
 }
