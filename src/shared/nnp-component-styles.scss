@@ -26,7 +26,10 @@
   background-color: var(--base-color-secondary);
   z-index: 100;
   color: var(--text-color-secondary);
-  @extend .flex-space-center;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   @extend .special-font;
 }
 
