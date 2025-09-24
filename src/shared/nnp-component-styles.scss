@@ -84,6 +84,10 @@
   @include mixins.nnp-component-primary;
 }
 
+.nnp-header-body {
+  height: calc(100% - var(--component-height-medium));
+}
+
 .nnp-header-primary {
   background-color: var(--component-color-primary);
   color: var(--text-color-secondary);
@@ -97,6 +101,10 @@
 .nnp-header-highlight {
   background-color: var(--component-color-highlight);
   color: var(--text-color-secondary);
+}
+
+.nnp-body-minus-header {
+  height: calc(100% - var(--component-height-medium));
 }
 
 .nnp-btn {
@@ -184,6 +192,13 @@
 
 .nnp-side-main-content {
   width: calc(100vw - var(--nav-width));
+  height: calc(100% - var(--nnp-padding-large));
+  padding: var(--nnp-padding-medium) var(--nnp-padding-large);
+  overflow-y: auto;
+}
+
+.nnp-side-main-content-full {
+  width: 100vw;
   height: calc(100% - var(--nnp-padding-large));
   padding: var(--nnp-padding-medium) var(--nnp-padding-large);
   overflow-y: auto;
