@@ -43,8 +43,8 @@
 }
 
 .nnp-menu-item:hover {
-  background-color: var(--component-color-tertiary);
-  color: var(--text-color-primary);
+  background-color: var(--component-color-hightlight);
+  color: var(--text-color-secondary);
 }
 
 .nnp-menu-item.active {
@@ -68,8 +68,8 @@
 }
 
 .nnp-bottom-footer {
-  background-color: var(--base-color-tertiary);
-  color: var(--text-color-secondary);
+  background-color: var(--base-color-secondary);
+  color: var(--text-color-link);
   height: var(--component-height-large);
   gap: 1rem;
   @include mixins.flex-direction(column);
@@ -130,7 +130,7 @@
 }
 
 .nnp-btn-secondary {
-  background-color: var(--component-color-secondary);
+  background-color: var(--component-color-primary);
   color: var(--text-color-primary);
 
   &:hover {
@@ -149,7 +149,7 @@
 }
 
 .nnp-btn-disabled {
-  background-color: var(--component-color-hightlight);
+  background-color: var(--component-color-secondary);
   color: var(--text-color-secondary);
   cursor: none !important;
 }
