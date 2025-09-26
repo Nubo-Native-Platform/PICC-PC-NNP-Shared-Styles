@@ -43,12 +43,12 @@
 }
 
 .nnp-menu-item:hover {
-  background-color: var(--component-color-hightlight);
+  background-color: var(--component-color-highlight);
   color: var(--text-color-secondary);
 }
 
 .nnp-menu-item.active {
-  background-color: var(--component-color-hightlight);
+  background-color: var(--component-color-highlight);
   color: var(--text-color-secondary);
 }
 
@@ -121,7 +121,7 @@
 }
 
 .nnp-btn-primary {
-  background-color: var(--component-color-hightlight);
+  background-color: var(--component-color-highlight);
   color: var(--text-color-secondary);
 
   &:hover {
