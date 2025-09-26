@@ -267,3 +267,11 @@
   transition: max-height 1s ease-in;
   // box-shadow: inset 0 4px 6px -4px #616161, inset 0 -4px 6px -4px #616161;
 }
+
+.nnp-accordian-component-primary {
+  background-color: var(--component-color-highlight);
+}
+
+.nnp-accordian-component-secondary {
+  background-color: var(--component-color-quaternary);
+}
