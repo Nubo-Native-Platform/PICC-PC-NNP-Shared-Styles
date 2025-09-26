@@ -69,7 +69,7 @@
 
 .nnp-bottom-footer {
   background-color: var(--base-color-secondary);
-  color: var(--text-color-link);
+  color: var(--text-color-secondary);
   height: var(--component-height-large);
   gap: 1rem;
   @include mixins.flex-direction(column);
