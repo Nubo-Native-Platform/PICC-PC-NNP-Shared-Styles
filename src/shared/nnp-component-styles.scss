@@ -269,9 +269,9 @@
 }
 
 .nnp-accordian-component-primary {
-  background-color: var(--component-color-highlight);
+  background-color: var(--component-color-highlight) !important;
 }
 
 .nnp-accordian-component-secondary {
-  background-color: var(--component-color-quaternary);
+  background-color: var(--component-color-quaternary) !important;
 }
