@@ -131,7 +131,7 @@
 
 .nnp-btn-secondary {
   background-color: var(--component-color-primary);
-  color: var(--text-color-primary);
+  color: var(--text-color-secondary);
 
   &:hover {
     background-color: var(--component-color-tertiary);
@@ -139,7 +139,7 @@
 }
 
 .nnp-btn-tertiary {
-  background-color: var(--base-color-secondary);
+  background-color: var(--base-color-primary);
   color: var(--text-color-secondary);
 
   &:hover {
