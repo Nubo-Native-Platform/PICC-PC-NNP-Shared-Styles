@@ -32,15 +32,15 @@
     --component-color-primary: #666666;
     --component-color-secondary: #f1f1f1;
     --component-color-tertiary: #ccc;
-    --component-color-highlight: #336699;
-    --component-color-blue: #588cf3;
+    --component-color-highlight: #0099cc;
+    --component-color-blue: #336699;
     --component-color-grey: #939498;
 
     --text-color-primary: black;
     --text-color-secondary: white;
     --text-color-tertiary: #336699;
     --text-color-quaternary: #7e7e7e;
-    --text-color-link: #336699;
+    --text-color-link: #0099cc;
     --text-color-disabled: #f44336;
 
     --nnp-padding-small: 0.5rem;
@@ -60,7 +60,7 @@
     --grid-odd-row-color: #E3E2D6;
     --grid-even-row-color: #f9f9f9;
     --grid-header-color: #888888;
-    --grid-header-text-color: #ffffcc;
+    --grid-header-text-color: #dddddd;
 }
 
 :root .dark-theme {

@@ -24,7 +24,6 @@
   width: 100%;
   height: var(--component-height-medium);
   background-color: var(--base-color-secondary);
-  z-index: 100;
   color: var(--text-color-secondary);
   font-size: 0.85rem;
   display: flex;
@@ -84,6 +83,11 @@
 
 .nnp-header {
   @extend .header-font;
+  @include mixins.nnp-component-primary;
+}
+
+.nnp-header-mb {
+  @extend .header-font-smaller;
   @include mixins.nnp-component-primary;
 }
 
@@ -151,7 +155,12 @@
 .nnp-btn-disabled {
   background-color: var(--component-color-secondary);
   color: var(--text-color-secondary);
-  cursor: none !important;
+  cursor: not-allowed !important;
+
+  &:hover {
+    background-color: var(--component-color-secondary);
+    color: var(--text-color-secondary);
+  }
 }
 
 .nnp-modal-container {
