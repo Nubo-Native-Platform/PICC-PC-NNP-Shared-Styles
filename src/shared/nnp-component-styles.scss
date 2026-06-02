@@ -284,3 +284,62 @@
 .nnp-accordian-component-secondary {
   background-color: var(--component-color-primary) !important;
 }
+
+
+/* Body Theme Styling */
+html.dark,
+body.dark-theme {
+    background-color: var(--base-color-primary);
+    color: var(--text-color-primary);
+}
+
+
+/* Inputs */
+html.dark input,
+html.dark textarea,
+html.dark select,
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+    border-color: #424242;
+    color: #cccccc !important;
+}
+
+
+/* Labels */
+html.dark label,
+body.dark-theme label {
+    color: #cccccc !important;
+}
+
+
+/* Main Container */
+html.dark .nnp-main-container,
+body.dark-theme .nnp-main-container {
+    background-color: var(--base-color-primary);
+}
+
+
+/* Material UI DataGrid */
+html.dark .MuiDataGrid-root,
+body.dark-theme .MuiDataGrid-root {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+
+    .MuiDataGrid-row {
+        background-color: #1e1e1e !important;
+        color: #d1d1d1 !important;
+
+        &:hover {
+            background-color: #333333 !important;
+        }
+    }
+
+    .MuiDataGrid-cell {
+        border-color: #5e5e5e !important;
+    }
+
+    .MuiDataGrid-columnHeaders {
+        background-color: #5e5e5e !important;
+    }
+}

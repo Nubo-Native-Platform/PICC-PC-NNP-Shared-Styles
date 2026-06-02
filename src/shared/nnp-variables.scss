@@ -11,7 +11,6 @@
     --font-size-xl: 1.25rem;
     --font-size-xxl: 2rem;
 
-
     --font-light: 200;
     --font-normal: 400;
     --font-bold: 600;
@@ -22,26 +21,31 @@
     --radius-large: 0.75rem;
 
     --border-color: #999999;
-    --modal-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-        0 8px 10px -6px rgba(0, 0, 0, 0.1);
 
-    --base-color-primary: white;
-    --base-color-secondary: black;
+    --modal-box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),
+                        0 8px 10px -6px rgba(0,0,0,.1);
+
+    /* Light Theme */
+    --base-color-primary: #ffffff;
+    --base-color-secondary: #000000;
     --base-color-tertiary: #444444;
 
     --component-color-primary: #666666;
     --component-color-secondary: #f1f1f1;
-    --component-color-tertiary: #ccc;
+    --component-color-tertiary: #cccccc;
     --component-color-highlight: #0099cc;
     --component-color-blue: #336699;
     --component-color-grey: #939498;
 
-    --text-color-primary: black;
-    --text-color-secondary: white;
+    --text-color-primary: #000000;
+    --text-color-secondary: #ffffff;
     --text-color-tertiary: #336699;
     --text-color-quaternary: #7e7e7e;
     --text-color-link: #0099cc;
     --text-color-disabled: #f44336;
+
+    --top-header-background-color: #000000;
+    --bottom-footer-background-color: #000000;
 
     --nnp-padding-small: 0.5rem;
     --nnp-padding-medium: 1rem;
@@ -56,20 +60,34 @@
     --nnp-date-formate: "DD/MM/YYYY";
     --nnp-time-formate: "HH:mm:ss";
 
-//grid
     --grid-odd-row-color: #E3E2D6;
     --grid-even-row-color: #f9f9f9;
-    --grid-header-color: #888888;
+    --grid-header-color: #0099CC;
     --grid-header-text-color: #dddddd;
 }
 
-:root .dark-theme {
+
+/* Dark Theme Variables */
+html.dark,
+body.dark-theme {
+    --base-color-primary: #121212;
+    --base-color-secondary: #1e1e1e;
+    --base-color-tertiary: #444444;
+
+    --component-color-primary: #666666;
+    --component-color-secondary: #1e1e1e;
+    --component-color-tertiary: #2f2f2f;
+    --component-color-highlight: #0099cc;
+    --component-color-blue: #336699;
+    --component-color-grey: #939498;
+
+    --text-color-primary: #ffffff;
+    --text-color-secondary: #ffffff;
+    --text-color-tertiary: #b0bec5;
+    --text-color-quaternary: #a6a6a6;
+    --text-color-link: #84DEF1;
+    --text-color-disabled: #f44336;
+
     --top-header-background-color: #121212;
     --bottom-footer-background-color: #1e1e1e;
-    --base-background-color-primary: #121212;
-    --base-background-color-secondary: #1e1e1e;
-    --text-primary-color: #ffffff;
-    --text-secondary-color: #ffffff;
-    --text-highlight-color: #b0bec5;
-    --text-link-color: #bb86fc;
 }
