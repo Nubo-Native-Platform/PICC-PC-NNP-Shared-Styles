@@ -26,7 +26,7 @@
                         0 8px 10px -6px rgba(0,0,0,.1);
 
     /* Light Theme */
-    --base-color-primary: #ffffff;
+    --base-color-primary: #E8E8E8;
     --base-color-secondary: #000000;
     --base-color-tertiary: #444444;
 
@@ -39,7 +39,7 @@
 
     --text-color-primary: #000000;
     --text-color-secondary: #ffffff;
-    --text-color-tertiary: #336699;
+    --text-color-tertiary: #0099cc;
     --text-color-quaternary: #7e7e7e;
     --text-color-link: #0099cc;
     --text-color-disabled: #f44336;
@@ -70,7 +70,7 @@
 /* Dark Theme Variables */
 html.dark,
 body.dark-theme {
-    --base-color-primary: #121212;
+    --base-color-primary: #3D3D3D;
     --base-color-secondary: #1e1e1e;
     --base-color-tertiary: #444444;
 

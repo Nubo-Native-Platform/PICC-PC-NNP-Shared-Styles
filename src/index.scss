@@ -3,8 +3,13 @@
 @use './shared/nnp-base-styles.scss';
 @use './shared/nnp-component-styles.scss';
 
-input:-webkit-autofill {
-    -webkit-box-shadow: none !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: var(--text-color-primary) !important;
+    transition: background-color 5000s ease-in-out 0s !important;
 }
 
 /* Global Scrollbar Styles */
