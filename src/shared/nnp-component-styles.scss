@@ -171,18 +171,19 @@
   @include mixins.justify(center, center);
   @extend .max-height;
   @extend .max-width;
+}
 
-  .nnp-modal-content {
-    background-color: var(--base-color-primary);
-    box-shadow: var(--modal-box-shadow);
-    margin: 20px 0;
-    @include mixins.flex-direction(column);
+.nnp-modal-content {
+  background-color: var(--base-color-primary);
+  border: 1px solid #cccccc !important;
+  box-shadow: var(--modal-box-shadow);
+  margin: 20px 0;
+  @include mixins.flex-direction(column);
 
-    .nnp-modal-body {
-      padding: var(--nnp-padding-medium);
-      flex-grow: 1;
-      overflow: auto;
-    }
+  .nnp-modal-body {
+    padding: var(--nnp-padding-medium);
+    flex-grow: 1;
+    overflow: auto;
   }
 }
 
@@ -289,8 +290,8 @@
 /* Body Theme Styling */
 html.dark,
 body.dark-theme {
-    background-color: var(--base-color-primary);
-    color: var(--text-color-primary);
+  background-color: var(--base-color-primary);
+  color: var(--text-color-primary);
 }
 
 
@@ -301,45 +302,133 @@ html.dark select,
 body.dark-theme input,
 body.dark-theme textarea,
 body.dark-theme select {
-    border-color: #424242;
-    color: #cccccc !important;
+  border-color: #424242;
+  color: #cccccc !important;
 }
 
 
 /* Labels */
 html.dark label,
 body.dark-theme label {
-    color: #cccccc !important;
+  color: #cccccc !important;
 }
 
 
 /* Main Container */
 html.dark .nnp-main-container,
 body.dark-theme .nnp-main-container {
-    background-color: var(--base-color-primary);
+  background-color: var(--base-color-primary);
 }
 
 
 /* Material UI DataGrid */
 html.dark .MuiDataGrid-root,
 body.dark-theme .MuiDataGrid-root {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+
+  .MuiDataGrid-row {
     background-color: #1e1e1e !important;
-    color: #ffffff !important;
+    color: #d1d1d1 !important;
 
-    .MuiDataGrid-row {
-        background-color: #1e1e1e !important;
-        color: #d1d1d1 !important;
-
-        &:hover {
-            background-color: #333333 !important;
-        }
+    &:hover {
+      background-color: #333333 !important;
     }
+  }
 
-    .MuiDataGrid-cell {
-        border-color: #5e5e5e !important;
-    }
+  .MuiDataGrid-cell {
+    border-color: #5e5e5e !important;
+  }
 
-    .MuiDataGrid-columnHeaders {
-        background-color: #5e5e5e !important;
-    }
+  .MuiDataGrid-columnHeaders {
+    background-color: #5e5e5e !important;
+  }
+}
+
+/* Dark Theme Modal Header & Footer Override */
+html.dark .nnp-modal-content .nnp-header-primary,
+body.dark-theme .nnp-modal-content .nnp-header-primary {
+  background-color: #373b42 !important;
+}
+
+/* Reusable Accordions styling */
+.nnp-accordion {
+	border: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	background: transparent;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.MuiCollapse-root {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.MuiCollapse-wrapper,
+	.MuiCollapse-wrapperInner,
+	.MuiAccordionDetails-root {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		position: relative;
+	}
+}
+
+.nnp-accordion-summary {
+	min-height: 42px !important;
+	letter-spacing: 0.02em;
+	font-size: 0.86rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-right: 0.75rem !important;
+	border-bottom: 1px solid #444444;
+
+	.MuiAccordionSummary-content {
+		margin: 0.45rem 0 !important;
+	}
+}
+
+html.dark .nnp-accordion,
+body.dark-theme .nnp-accordion {
+	border-color: var(--border-color);
+}
+
+html.dark .nnp-accordion-summary,
+body.dark-theme .nnp-accordion-summary {
+	border-bottom-color: var(--border-color);
+}
+
+.nnp-accordion-toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid currentColor;
+	border-radius: 2px;
+	font-size: 1rem;
+	line-height: 1;
+	flex-shrink: 0;
+}
+
+/* Reusable Feature Card Icon styles */
+.nnp-feature-icon-container {
+	position: absolute;
+	top: 16px; /* aligned to the top of the card body */
+	right: 24px; /* positioned on the right side of the card body */
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.nnp-feature-icon {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
