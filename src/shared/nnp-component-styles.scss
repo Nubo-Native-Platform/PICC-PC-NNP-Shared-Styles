@@ -385,6 +385,14 @@ body.dark-theme .nnp-modal-content .nnp-header-primary {
 	text-transform: uppercase;
 	padding-right: 0.75rem !important;
 	border-bottom: 1px solid #444444;
+	background-color: #B8B8B8 !important;
+	color: #000000 !important;
+
+	html.dark &,
+	body.dark-theme & {
+		background-color: #454545 !important;
+		color: #2799CC !important;
+	}
 
 	.MuiAccordionSummary-content {
 		margin: 0.45rem 0 !important;
