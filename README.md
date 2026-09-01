@@ -1,4 +1,4 @@
-# nnp-shared-styles
+# nnp-shared-styles 
 
 > A modular, lightweight SCSS/CSS design system and styling foundation providing design tokens, CSS custom properties, light/dark themes, responsive layout utilities, and reusable component styles.
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Overview
+##  Overview
 
 `nnp-shared-styles` is an open-source styling library engineered to deliver a consistent look-and-feel across multi-project ecosystems. It provides:
 - **Design Tokens**: Standardized CSS custom properties for colors, typography, spacing, border radii, and component dimensions.
@@ -41,17 +41,17 @@
 
 ---
 
-## Key Features
+##  Key Features
 
-- **Zero JS Dependencies**: Pure SCSS and CSS with zero JavaScript overhead.
-- **Instant Dark Mode**: Toggle between themes effortlessly by switching the `.dark` or `.dark-theme` class.
-- **Modular Architecture**: Import only what you need, or include the full compiled stylesheet.
-- **Responsive & Cross-Browser**: Standardized scrollbar styling, modern autofill overrides, and flexible layouts.
-- **Component Agnostic**: Works seamlessly with React, Angular, Vue, Svelte, or vanilla HTML/CSS.
+- ** Zero JS Dependencies**: Pure SCSS and CSS with zero JavaScript overhead.
+- ** Instant Dark Mode**: Toggle between themes effortlessly by switching the `.dark` or `.dark-theme` class.
+- ** Modular Architecture**: Import only what you need, or include the full compiled stylesheet.
+- ** Responsive & Cross-Browser**: Standardized scrollbar styling, modern autofill overrides, and flexible layouts.
+- ** Component Agnostic**: Works seamlessly with React, Angular, Vue, Svelte, or vanilla HTML/CSS.
 
 ---
 
-## Project Structure
+##  Project Structure
 
 ```text
 nnp-shared-styles/
@@ -267,6 +267,7 @@ For the complete list of tokens and their values, refer to the [User Manual](USE
   - SCSS coding standards, token architecture, and mixin conventions.
   - Guide to adding new components and client themes.
   - Contribution and pull request workflows.
+- **[Security Policy](SECURITY.md)**: Vulnerability disclosure and reporting procedure.
 - **[Changelog](CHANGELOG.md)**: Version release notes and change history.
 
 ---
