@@ -1,4 +1,4 @@
-# Changelog 📝
+# Changelog
 
 All notable changes to **`nnp-shared-styles`** will be documented in this file.
 
@@ -16,8 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `USER_MANUAL_AND_DEPLOYMENT_GUIDE.md`: Deep-dive component recipes, CSS variable dictionary, theme toggle hooks, and automated CI/CD release pipelines.
   - `DEVELOPER_GUIDELINES.md`: Local setup guide, architecture walkthrough, Sass `@use` conventions, token creation how-tos, and QA testing checklist.
   - `LICENSE`: MIT License.
-  - `CONTRIBUTING.md`: GitHub contribution flow and PR process.
-  - `SECURITY.md`: Security vulnerability reporting policy.
+  - `CHANGELOG.md`: Release notes and change history.
 
 ### Security
 - Scrubbed all internal GitLab URLs and private tokens across the codebase.

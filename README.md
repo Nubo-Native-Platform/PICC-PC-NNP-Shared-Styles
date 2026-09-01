@@ -1,4 +1,4 @@
-# nnp-shared-styles 🎨
+# nnp-shared-styles
 
 > A modular, lightweight SCSS/CSS design system and styling foundation providing design tokens, CSS custom properties, light/dark themes, responsive layout utilities, and reusable component styles.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Key Features](#key-features)
@@ -30,7 +30,7 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 `nnp-shared-styles` is an open-source styling library engineered to deliver a consistent look-and-feel across multi-project ecosystems. It provides:
 - **Design Tokens**: Standardized CSS custom properties for colors, typography, spacing, border radii, and component dimensions.
@@ -41,17 +41,17 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **⚡ Zero JS Dependencies**: Pure SCSS and CSS with zero JavaScript overhead.
-- **🌓 Instant Dark Mode**: Toggle between themes effortlessly by switching the `.dark` or `.dark-theme` class.
-- **🧩 Modular Architecture**: Import only what you need, or include the full compiled stylesheet.
-- **📱 Responsive & Cross-Browser**: Standardized scrollbar styling, modern autofill overrides, and flexible layouts.
-- **🎯 Component Agnostic**: Works seamlessly with React, Angular, Vue, Svelte, or vanilla HTML/CSS.
+- **Zero JS Dependencies**: Pure SCSS and CSS with zero JavaScript overhead.
+- **Instant Dark Mode**: Toggle between themes effortlessly by switching the `.dark` or `.dark-theme` class.
+- **Modular Architecture**: Import only what you need, or include the full compiled stylesheet.
+- **Responsive & Cross-Browser**: Standardized scrollbar styling, modern autofill overrides, and flexible layouts.
+- **Component Agnostic**: Works seamlessly with React, Angular, Vue, Svelte, or vanilla HTML/CSS.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 nnp-shared-styles/
@@ -76,7 +76,7 @@ nnp-shared-styles/
 
 ---
 
-## 📦 Installation
+## Installation
 
 Install the package via your preferred package manager:
 
@@ -99,7 +99,7 @@ npm install git+https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Style
 
 ---
 
-## 🚀 Quick Start & Usage
+## Quick Start & Usage
 
 ### 1. Using SCSS (@use)
 
@@ -165,7 +165,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 
 ---
 
-## 🌓 Theming (Light & Dark Mode)
+## Theming (Light & Dark Mode)
 
 All color tokens are bound to CSS custom properties. By default, the root variables apply the **Light Theme**.
 
@@ -198,7 +198,7 @@ function toggleDarkMode(isDark: boolean) {
 
 ---
 
-## 🎨 Core Design Tokens
+## Core Design Tokens
 
 A snapshot of the key CSS variables available in your stylesheets:
 
@@ -216,7 +216,7 @@ For the complete list of tokens and their values, refer to the [User Manual](USE
 
 ---
 
-## 🧩 Component & Utility Classes
+## Component & Utility Classes
 
 ### Layout
 - `.nnp-layout-container`: Base full-height column layout.
@@ -244,7 +244,7 @@ For the complete list of tokens and their values, refer to the [User Manual](USE
 
 ---
 
-## 🛠 NPM Scripts
+## NPM Scripts
 
 | Command | Description |
 | :--- | :--- |
@@ -255,27 +255,25 @@ For the complete list of tokens and their values, refer to the [User Manual](USE
 
 ---
 
-## 📚 Documentation & Guidelines
+## Documentation & Guidelines
 
-- 📘 **[User Manual & Deployment Guide](USER_MANUAL_AND_DEPLOYMENT_GUIDE.md)**:
+- **[User Manual & Deployment Guide](USER_MANUAL_AND_DEPLOYMENT_GUIDE.md)**:
   - Deep-dive component integration recipes.
   - Complete CSS variable and theme catalog.
   - Step-by-step CI/CD pipeline automation (GitHub Actions & GitLab CI).
   - Package publishing workflows (Public npm, Private Registries, GitHub Packages).
-- 🛠 **[Developer Guidelines](DEVELOPER_GUIDELINES.md)**:
+- **[Developer Guidelines](DEVELOPER_GUIDELINES.md)**:
   - Developer workstation setup.
   - SCSS coding standards, token architecture, and mixin conventions.
   - Guide to adding new components and client themes.
   - Contribution and pull request workflows.
-- 🤝 **[Contributing Guide](CONTRIBUTING.md)**: Quick contribution workflow and checklist.
-- 🔒 **[Security Policy](SECURITY.md)**: Vulnerability disclosure and reporting procedure.
-- 📝 **[Changelog](CHANGELOG.md)**: Version release notes and change history.
+- **[Changelog](CHANGELOG.md)**: Version release notes and change history.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions from the community! Please check our [Contributing Guide](CONTRIBUTING.md) and [Developer Guidelines](DEVELOPER_GUIDELINES.md) before submitting a Pull Request.
+We welcome contributions from the community! Please check our [Developer Guidelines](DEVELOPER_GUIDELINES.md) before submitting a Pull Request.
 
 1. Fork the repository on [GitHub](https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Styles).
 2. Create your feature branch (`git checkout -b feature/amazing-feature`).
@@ -285,7 +283,7 @@ We welcome contributions from the community! Please check our [Contributing Guid
 
 ---
 
-## 🔒 Security & Credentials Policy
+## Security & Credentials Policy
 
 This project strictly adheres to open-source security standards:
 - **No hardcoded secrets or credentials**: All internal URLs, tokens, passwords, and private registry endpoints have been scrubbed.
@@ -294,6 +292,6 @@ This project strictly adheres to open-source security standards:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.

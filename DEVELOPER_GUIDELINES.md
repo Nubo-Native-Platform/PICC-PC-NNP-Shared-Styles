@@ -1,10 +1,10 @@
-# Developer Guidelines 🛠️👨‍💻
+# Developer Guidelines
 
 Welcome to the **`nnp-shared-styles`** developer guidelines! This document outlines architecture, local setup, build workflows, coding standards, and step-by-step instructions for extending the library.
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [1. Architectural Overview](#1-architectural-overview)
 - [2. Development Environment Setup](#2-development-environment-setup)
@@ -248,7 +248,7 @@ We adhere to a standard GitHub Flow branching strategy and Conventional Commits.
 - `refactor/<short-description>`: Code cleanup without functional change.
 
 ### 7.2 Commit Message Format
-Follow [Conventional Commits](https://www.conventionalcommits.org/):
+Follow Conventional Commits:
 ```text
 feat(components): add .nnp-badge component styling
 fix(variables): correct dark mode contrast for muted text

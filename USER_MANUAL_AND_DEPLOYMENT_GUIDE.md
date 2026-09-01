@@ -1,8 +1,8 @@
-# User Manual & Deployment Guidelines 📘🚀
+# User Manual & Deployment Guidelines
 
 This guide provides end-to-end documentation for consumers and operations teams utilizing **`nnp-shared-styles`**. It is split into two major sections:
-1. **[Part 1: User Manual](#part-1-user-manual)** — Integrating, consuming, theming, and building interfaces with the design system.
-2. **[Part 2: Deployment Guidelines](#part-2-deployment-guidelines)** — Packaging, publishing, CI/CD pipeline automation, and release management.
+1. **[Part 1: User Manual](#part-1-user-manual)** -- Integrating, consuming, theming, and building interfaces with the design system.
+2. **[Part 2: Deployment Guidelines](#part-2-deployment-guidelines)** -- Packaging, publishing, CI/CD pipeline automation, and release management.
 
 ---
 
@@ -197,7 +197,7 @@ export function useTheme() {
 
   <!-- Bottom Footer -->
   <footer class="nnp-bottom-footer">
-    <p>© Nubo Native Platform. All rights reserved.</p>
+    <p>(c) Nubo Native Platform. All rights reserved.</p>
   </footer>
 </div>
 ```
@@ -211,13 +211,13 @@ export function useTheme() {
       <div class="nnp-side-menu-item">
         <div class="nnp-side-menu-header active">
           <span>Overview</span>
-          <span class="nnp-side-menu-arrow">›</span>
+          <span class="nnp-side-menu-arrow">&gt;</span>
         </div>
       </div>
       <div class="nnp-side-menu-item">
         <div class="nnp-side-menu-header">
           <span>Reports</span>
-          <span class="nnp-side-menu-arrow">›</span>
+          <span class="nnp-side-menu-arrow">&gt;</span>
         </div>
       </div>
     </aside>
