@@ -1,8 +1,8 @@
-# nnp-shared-styles 
+# PICC - PC - NNP Shared Styles 
 
 > A modular, lightweight SCSS/CSS design system and styling foundation providing design tokens, CSS custom properties, light/dark themes, responsive layout utilities, and reusable component styles.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: Apache License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![NPM Version](https://img.shields.io/badge/npm-v1.1.6-orange.svg)](https://www.npmjs.com/)
 [![SCSS](https://img.shields.io/badge/style-SCSS-CC6699.svg)](https://sass-lang.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](DEVELOPER_GUIDELINES.md)
@@ -295,4 +295,4 @@ This project strictly adheres to open-source security standards:
 
 ## License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License**. See the [LICENSE](LICENSE) file for details.
