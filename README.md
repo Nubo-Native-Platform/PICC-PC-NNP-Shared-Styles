@@ -2,8 +2,8 @@
 
 > A modular, lightweight SCSS/CSS design system and styling foundation providing design tokens, CSS custom properties, light/dark themes, responsive layout utilities, and reusable component styles.
 
-[![License: Apache License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![NPM Version](https://img.shields.io/badge/npm-v1.1.6-orange.svg)](https://www.npmjs.com/)
+[![License: Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![NPM Version](https://img.shields.io/badge/npm-v1.1.7-orange.svg)](https://www.npmjs.com/package/@nubo-native-platform/nnp-shared-styles)
 [![SCSS](https://img.shields.io/badge/style-SCSS-CC6699.svg)](https://sass-lang.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](DEVELOPER_GUIDELINES.md)
 
@@ -32,7 +32,7 @@
 
 ##  Overview
 
-`nnp-shared-styles` is an open-source styling library engineered to deliver a consistent look-and-feel across multi-project ecosystems. It provides:
+`@nubo-native-platform/nnp-shared-styles` is an open-source styling library engineered to deliver a consistent look-and-feel across multi-project ecosystems. It provides:
 - **Design Tokens**: Standardized CSS custom properties for colors, typography, spacing, border radii, and component dimensions.
 - **Dynamic Theming**: Seamless runtime switching between Light and Dark modes.
 - **Layout Engines**: Flexbox helper classes, sticky headers, collapsible side navigation, and responsive content wrappers.
@@ -82,19 +82,19 @@ Install the package via your preferred package manager:
 
 ```bash
 # Using npm
-npm install nnp-shared-styles
+npm install @nubo-native-platform/nnp-shared-styles
 
 # Using yarn
-yarn add nnp-shared-styles
+yarn add @nubo-native-platform/nnp-shared-styles
 
 # Using pnpm
-pnpm add nnp-shared-styles
+pnpm add @nubo-native-platform/nnp-shared-styles
 ```
 
 Or install directly from the GitHub repository:
 
 ```bash
-npm install git+https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Styles.git#v1.1.6
+npm install git+https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Styles.git#v1.1.7
 ```
 
 ---
@@ -107,13 +107,13 @@ Import the master SCSS stylesheet directly in your project's main stylesheet (e.
 
 ```scss
 // Import the entire design system
-@use 'nnp-shared-styles/src/index.scss';
+@use '@nubo-native-platform/nnp-shared-styles/src/index.scss';
 
 // Or import specific modules individually
-@use 'nnp-shared-styles/src/shared/nnp-variables.scss';
-@use 'nnp-shared-styles/src/shared/nnp-mixins.scss' as mixins;
-@use 'nnp-shared-styles/src/shared/nnp-base-styles.scss';
-@use 'nnp-shared-styles/src/shared/nnp-component-styles.scss';
+@use '@nubo-native-platform/nnp-shared-styles/src/shared/nnp-variables.scss';
+@use '@nubo-native-platform/nnp-shared-styles/src/shared/nnp-mixins.scss' as mixins;
+@use '@nubo-native-platform/nnp-shared-styles/src/shared/nnp-base-styles.scss';
+@use '@nubo-native-platform/nnp-shared-styles/src/shared/nnp-component-styles.scss';
 ```
 
 ### 2. Using Pre-compiled CSS
@@ -122,13 +122,13 @@ If your project does not use a Sass compiler, import the pre-compiled CSS bundle
 
 ```javascript
 // In your application root file (e.g., main.js, index.tsx, App.jsx)
-import 'nnp-shared-styles/dist/index.min.css';
+import '@nubo-native-platform/nnp-shared-styles/dist/index.min.css';
 ```
 
 Or link it directly in your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="node_modules/nnp-shared-styles/dist/index.min.css" />
+<link rel="stylesheet" href="node_modules/@nubo-native-platform/nnp-shared-styles/dist/index.min.css" />
 ```
 
 ---
@@ -140,7 +140,7 @@ Or link it directly in your HTML `<head>`:
 // src/index.tsx or src/main.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'nnp-shared-styles/dist/index.min.css';
+import '@nubo-native-platform/nnp-shared-styles/dist/index.min.css';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
@@ -150,7 +150,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 ```json
 // angular.json
 "styles": [
-  "node_modules/nnp-shared-styles/dist/index.min.css",
+  "node_modules/@nubo-native-platform/nnp-shared-styles/dist/index.min.css",
   "src/styles.scss"
 ]
 ```
@@ -159,7 +159,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 ```vue
 <!-- src/App.vue -->
 <style>
-@import 'nnp-shared-styles/dist/index.min.css';
+@import '@nubo-native-platform/nnp-shared-styles/dist/index.min.css';
 </style>
 ```
 
