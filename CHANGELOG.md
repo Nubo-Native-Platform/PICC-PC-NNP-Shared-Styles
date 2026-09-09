@@ -1,9 +1,22 @@
 # Changelog
 
-All notable changes to **`nnp-shared-styles`** will be documented in this file.
+All notable changes to **`@nubo-native-platform/nnp-shared-styles`** will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [1.1.7] - 2026-09-09
+
+### Changed
+- **Package Scope**: Renamed package from `nnp-shared-styles` to `@nubo-native-platform/nnp-shared-styles` for organization namespace.
+- Updated all documentation examples to use scoped package name.
+- NPM publishing now publishes under organization account.
+
+### Fixed
+- Resolved npm registry configuration to publish to public npm registry instead of GitHub Packages.
+- Fixed npm install failures by properly configuring registry for public dependencies.
 
 ---
 
