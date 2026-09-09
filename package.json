@@ -35,9 +35,6 @@
     "homepage": "https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Styles#readme",
     "author": "Nubo Native Platform",
     "license": "MIT",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
-    },
     "devDependencies": {
         "sass": "^1.89.2"
     }
