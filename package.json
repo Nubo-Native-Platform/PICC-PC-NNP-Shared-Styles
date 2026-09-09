@@ -34,7 +34,7 @@
     },
     "homepage": "https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Styles#readme",
     "author": "Nubo Native Platform",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "devDependencies": {
         "sass": "^1.89.2"
     }
