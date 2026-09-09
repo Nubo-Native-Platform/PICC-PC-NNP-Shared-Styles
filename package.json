@@ -1,6 +1,6 @@
 {
-    "name": "nnp-shared-styles",
-    "version": "1.1.6",
+    "name": "@nubo-native-platform/nnp-shared-styles",
+    "version": "1.1.7",
     "description": "Shared SCSS styling library providing design tokens, themes, layout utilities, and reusable component styles.",
     "main": "src/index.scss",
     "style": "dist/index.css",
@@ -34,7 +34,7 @@
     },
     "homepage": "https://github.com/Nubo-Native-Platform/PICC-PC-NNP-Shared-Styles#readme",
     "author": "Nubo Native Platform",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "devDependencies": {
         "sass": "^1.89.2"
     }
