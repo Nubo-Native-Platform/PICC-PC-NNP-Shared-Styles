@@ -1,0 +1,442 @@
+@use './nnp-mixins.scss' as mixins;
+@use './nnp-base-styles.scss';
+
+.nnp-layout-container {
+  @include mixins.flex-direction(column);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.nnp-main-container {
+  padding-top: var(--component-height-medium);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.nnp-main-content {
+  position: relative;
+  height: 100%;
+  @include mixins.flex-direction(column);
+}
+
+.nnp-top-header {
+  width: 100%;
+  height: var(--component-height-medium);
+  background-color: var(--base-color-secondary);
+  color: var(--text-color-secondary);
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend .special-font;
+}
+
+.nnp-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--nnp-padding-medium);
+  height: 100%;
+  cursor: pointer;
+}
+
+.nnp-menu-item:hover {
+  background-color: #06b9f5;
+  color: var(--text-color-secondary);
+}
+
+.nnp-menu-item.active {
+  background-color: var(--component-color-highlight);
+  color: var(--text-color-secondary);
+}
+
+.nnp-body-content {
+  height: calc(100% - var(--component-height-medium));
+
+}
+
+.nnp-logo-panel {
+  @include mixins.justify(center, center);
+  background-color: var(--base-color-secondary);
+  height: var(--component-height-large);
+
+  img {
+    height: 90%;
+  }
+}
+
+.nnp-bottom-footer {
+  background-color: var(--base-color-secondary);
+  color: var(--text-color-secondary);
+  height: var(--component-height-large);
+  gap: 1rem;
+  @include mixins.flex-direction(column);
+  @include mixins.justify(center, center);
+
+}
+
+.nnp-title {
+  @extend .header-font;
+  padding-bottom: var(--nnp-padding-medium);
+}
+
+.nnp-header {
+  @extend .header-font;
+  @include mixins.nnp-component-primary;
+}
+
+.nnp-header-mb {
+  @extend .header-font-smaller;
+  @include mixins.nnp-component-primary;
+}
+
+.nnp-header-body {
+  height: calc(100% - var(--component-height-medium));
+}
+
+.nnp-header-primary {
+  background-color: var(--component-color-primary);
+  color: var(--text-color-secondary);
+}
+
+.nnp-header-secondary {
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-primary);
+}
+
+.nnp-header-highlight {
+  background-color: var(--component-color-highlight);
+  color: var(--text-color-secondary);
+}
+
+.nnp-body-minus-header {
+  height: calc(100% - var(--component-height-medium));
+}
+
+.nnp-btn {
+  @include mixins.nnp-component-secondary;
+  @include mixins.justify(center, center);
+  @extend .cursor-pointer;
+  @extend .header-font;
+  border-radius: var(--radius-medium);
+  padding: 0 var(--nnp-padding-medium);
+
+}
+
+.nnp-btn-primary {
+  background-color: var(--component-color-highlight);
+  color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+  }
+}
+
+.nnp-btn-secondary {
+  background-color: var(--component-color-primary);
+  color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+  }
+}
+
+.nnp-btn-tertiary {
+  background-color: var(--base-color-primary);
+  color: var(--text-color-secondary);
+
+  &:hover {
+    background-color: var(--component-color-tertiary);
+    color: var(--text-color-primary);
+  }
+}
+
+.nnp-btn-disabled {
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-secondary);
+  cursor: not-allowed !important;
+
+  &:hover {
+    background-color: var(--component-color-secondary);
+    color: var(--text-color-secondary);
+  }
+}
+
+.nnp-modal-container {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  z-index: 100;
+  @include mixins.justify(center, center);
+  @extend .max-height;
+  @extend .max-width;
+}
+
+.nnp-modal-content {
+  background-color: var(--base-color-primary);
+  border: 1px solid #cccccc !important;
+  box-shadow: var(--modal-box-shadow);
+  margin: 20px 0;
+  @include mixins.flex-direction(column);
+
+  .nnp-modal-body {
+    padding: var(--nnp-padding-medium);
+    flex-grow: 1;
+    overflow: auto;
+  }
+}
+
+
+
+.nnp-side-layout-container {
+  // @include mixins.flex-direction(row);
+  height: calc(100vh - var(--component-height-medium));
+  overflow: hidden;
+}
+
+.nnp-side-main-container {
+  // width: calc(100vw - var(--nav-width));
+  // overflow-x: hidden;
+  // overflow-y: hidden;
+  @include mixins.flex-direction(row);
+  height: 100%;
+}
+
+.nnp-side-main-content {
+  width: calc(100vw - var(--nav-width));
+  height: calc(100% - var(--nnp-padding-large));
+  padding: var(--nnp-padding-medium) var(--nnp-padding-large);
+  overflow-y: auto;
+}
+
+.nnp-side-main-content-full {
+  width: 100vw;
+  height: calc(100% - var(--nnp-padding-large));
+  padding: var(--nnp-padding-medium) var(--nnp-padding-large);
+  overflow-y: auto;
+}
+
+.nnp-side-nav {
+  @include mixins.flex-direction(column);
+  @extend .special-font;
+  width: var(--nav-width);
+  background-color: var(--component-color-secondary);
+  color: var(--text-color-primary);
+  border-right: 1px solid var(--border-color);
+  transition: width 0.3s ease;
+  height: 100%;
+  overflow-y: auto;
+
+  .nnp-side-menu-item {
+    @include mixins.flex-direction(column);
+  }
+
+
+  .nnp-side-menu-header {
+    @include mixins.justify(space-between, center);
+    height: var(--component-height-medium);
+    cursor: pointer;
+    padding: 0 var(--nnp-padding-small);
+
+    &:hover {
+      background-color: var(--component-color-tertiary);
+    }
+
+    .nnp-side-menu-arrow {
+      font-size: var(--font-size-md);
+    }
+
+    .nnp-side-menu-children {
+      font-size: var(--font-size-xs);
+    }
+  }
+
+  .nnp-side-menu-header.selected {
+    background-color: var(--component-color-primary) !important;
+    color: var(--text-color-secondary) !important;
+  }
+
+  .nnp-side-menu-header.active {
+    background-color: var(--component-color-tertiary);
+  }
+}
+
+.nnp-side-nav.collapsed {
+  width: 0;
+}
+
+.nnp-side-menu-children {
+  max-height: 0;
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+}
+
+.nnp-side-menu-children.open {
+  max-height: 300vh;
+  transition: max-height 1s ease-in;
+  // box-shadow: inset 0 4px 6px -4px #616161, inset 0 -4px 6px -4px #616161;
+}
+
+.nnp-accordian-component-primary {
+  background-color: var(--component-color-primary) !important;
+}
+
+.nnp-accordian-component-secondary {
+  background-color: var(--component-color-primary) !important;
+}
+
+
+/* Body Theme Styling */
+html.dark,
+body.dark-theme {
+  background-color: var(--base-color-primary);
+  color: var(--text-color-primary);
+}
+
+
+/* Inputs */
+html.dark input,
+html.dark textarea,
+html.dark select,
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+  border-color: #424242;
+  color: #cccccc !important;
+}
+
+
+/* Labels */
+html.dark label,
+body.dark-theme label {
+  color: #cccccc !important;
+}
+
+
+/* Main Container */
+html.dark .nnp-main-container,
+body.dark-theme .nnp-main-container {
+  background-color: var(--base-color-primary);
+}
+
+
+/* Material UI DataGrid */
+html.dark .MuiDataGrid-root,
+body.dark-theme .MuiDataGrid-root {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+
+  .MuiDataGrid-row {
+    background-color: #1e1e1e !important;
+    color: #d1d1d1 !important;
+
+    &:hover {
+      background-color: #333333 !important;
+    }
+  }
+
+  .MuiDataGrid-cell {
+    border-color: #5e5e5e !important;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    background-color: #5e5e5e !important;
+  }
+}
+
+/* Dark Theme Modal Header & Footer Override */
+html.dark .nnp-modal-content .nnp-header-primary,
+body.dark-theme .nnp-modal-content .nnp-header-primary {
+  background-color: #373b42 !important;
+}
+
+/* Reusable Accordions styling */
+.nnp-accordion {
+	border: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	background: transparent;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.MuiCollapse-root {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.MuiCollapse-wrapper,
+	.MuiCollapse-wrapperInner,
+	.MuiAccordionDetails-root {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		position: relative;
+	}
+}
+
+.nnp-accordion-summary {
+	min-height: 42px !important;
+	letter-spacing: 0.02em;
+	font-size: 0.86rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-right: 0.75rem !important;
+	border-bottom: 1px solid #444444;
+	background-color: #B8B8B8 !important;
+	color: #000000 !important;
+
+	html.dark &,
+	body.dark-theme & {
+		background-color: #2E2E2E !important;
+		color: #2799CC !important;
+	}
+
+	.MuiAccordionSummary-content {
+		margin: 0.45rem 0 !important;
+	}
+}
+
+html.dark .nnp-accordion,
+body.dark-theme .nnp-accordion {
+	border-color: var(--border-color);
+}
+
+html.dark .nnp-accordion-summary,
+body.dark-theme .nnp-accordion-summary {
+	border-bottom-color: var(--border-color);
+}
+
+.nnp-accordion-toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid currentColor;
+	border-radius: 2px;
+	font-size: 1rem;
+	line-height: 1;
+	flex-shrink: 0;
+}
+
+/* Reusable Feature Card Icon styles */
+.nnp-feature-icon-container {
+	position: absolute;
+	top: 16px; /* aligned to the top of the card body */
+	right: 24px; /* positioned on the right side of the card body */
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.nnp-feature-icon {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}

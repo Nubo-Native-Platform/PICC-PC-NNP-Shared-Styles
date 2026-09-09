@@ -1,0 +1,23 @@
+@mixin justify($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-direction($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin nnp-component-primary {
+  height: var(--component-height-medium);
+  min-height: var(--component-height-medium) !important;
+  padding: 0 var(--nnp-padding-medium);
+}
+
+
+@mixin nnp-component-secondary {
+  height: var(--component-height-small);
+  min-height: var(--component-height-small) !important;
+  padding: 0 var(--nnp-padding-small);
+}
